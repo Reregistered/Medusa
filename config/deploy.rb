@@ -1,7 +1,7 @@
 set :application, "Medusa"
 
 set :scm, :git
-set :repository,  "git@github.com:Reregistered/Medusa.git"
+set :repository,  "git@github.com:getteamup/Medusa.git"
 set :branch, "production"
 ssh_options[:forward_agent] = true #uses the local machine's SSH keys instead of those on the remote server for cloning the repo
 
