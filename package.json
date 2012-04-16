@@ -12,7 +12,8 @@
     "redis": "0.6.x",
     "express":"2.x",
     "socket.io":"*",
-    "commander":"*"
+    "commander":"*",
+    "jade":"*"
 
   },
   "devDependencies": {
