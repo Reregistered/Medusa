@@ -15,14 +15,14 @@ set :deploy_to, "/home/ubuntu/apps/#{application}"
 
 namespace :deploy do
   task :start, :roles => :app do 
-    run "forever start #{current_path}/server.js"
+    run "supervisor start #{current_path}/server.js &"
   end
   task :stop, :roles => :app do 
-    run "forever stopall"
+    run "killall node"
   end
   task :restart, :roles => :app, :except => { :no_release => true } do
     run "cd #{current_path} && npm install"
-    run "forever stopall"
-    run "forever start #{current_path}/server.js"
+    run "killall node"
+    run "supervisor start #{current_path}/server.js &"
   end
 end
