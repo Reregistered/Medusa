@@ -15,7 +15,7 @@ set :deploy_to, "/home/ubuntu/apps/#{application}"
 
 namespace :deploy do
   task :start, :roles => :app do 
-    run "supervisor start #{current_path}/server.js &"
+    run "cd #{current_path} && supervisor server.js &"
   end
   task :stop, :roles => :app do 
     run "killall node"
@@ -23,6 +23,6 @@ namespace :deploy do
   task :restart, :roles => :app, :except => { :no_release => true } do
     run "cd #{current_path} && npm install"
     run "killall node"
-    run "supervisor start #{current_path}/server.js &"
+    run "cd #{current_path} && supervisor server.js &"
   end
 end
