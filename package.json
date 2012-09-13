@@ -1,0 +1,26 @@
+{
+  "name": "medusa",
+  "description": "A Redis transport and Log server for winston",
+  "version": "0.0.1",
+  "author": ["Dov Amihod <dov@getTeamup.com>","Charlie Robbins <charlie.robbins@gmail.com>"],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/reregistered/medusa.git"
+  },
+  "keywords": ["logging", "sysadmin", "tools", "winston", "redis"],
+  "dependencies": {
+    "redis": "0.6.x",
+    "express":"2.x",
+    "socket.io":"*",
+    "commander":"*",
+    "jade":"*"
+
+  },
+  "devDependencies": {
+    "winston": "0.4.x",
+    "vows": "0.5.x"
+  },
+  "main": "./lib/medusa",
+  "scripts": { "test": "vows test/*-test.js --spec" },
+  "engines": { "node": ">= 0.4.0" }
+}
