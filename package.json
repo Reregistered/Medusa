@@ -1,7 +1,7 @@
 {
   "name": "medusa",
   "description": "A Redis transport and Log server for winston",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": ["Charlie Robbins <charlie.robbins@gmail.com>","Dov Amihod <dov@getTeamup.com>"],
   "repository": {
     "type": "git",
