@@ -10,10 +10,7 @@
   "keywords": ["logging", "sysadmin", "tools", "winston", "redis"],
   "dependencies": {
     "redis"     : "0.7.2",
-    "express"   : "2.x",
-    "socket.io" : "*",
     "optimist"  : "0.3.4",
-    "jade"      : "0.26.3",
     "winston"   : "0.5.11"
   },
   "devDependencies": {
