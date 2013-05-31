@@ -16,5 +16,3 @@ var path = require('path')
 app = require(path.join(__dirname,'lib','http'));
 
 app.init({host:args.host,port:args.port});
-
-app.listen(args.server);
